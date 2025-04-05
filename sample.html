@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FineBite</title>
+  <meta name="description" content="FineBite is a modern restaurant template perfect for showcasing elegant cuisine and ambiance.">
+  <meta name="keywords" content="restaurant, fine dining, cuisine, modern, template">
+  <meta name="author" content="FineBite Web Design">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3595/3595455.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(to bottom, #f7f6f2, #fff6f6);
+      color: #333;
+    }
+    header {
+      background-color: #ffffff;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      color: #c43b3b;
+      margin: 0;
+    }
+    nav {
+      display: flex;
+      gap: 1.2rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #555;
+      font-weight: 600;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: #c43b3b;
+      transition: width 0.3s ease;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    nav a:hover {
+      color: #c43b3b;
+    }
+    section {
+      padding: 3rem 2rem;
+    }
+    .section-light {
+      background: rgba(255,255,255,0.95);
+    }
+    .section-accent {
+      background: rgba(255,242,242,0.95);
+    }
+    .cta-button {
+      background-color: #c43b3b;
+      color: #fff;
+      padding: 0.8rem 1.6rem;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .cta-button:hover {
+      background-color: #a32f2f;
+    }
+    #hero {
+      background: url('https://png.pngtree.com/background/20250201/original/pngtree-christmas-dinner-with-candles-and-holy-night-background-picture-image_15972981.jpg') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #70c530;
+      text-shadow: 0 0 10px rgba(0,0,0,0.7);
+    }
+    #hero h2 {
+      font-size: 3rem;
+      color: #ffffff;
+    }
+    .gallery-collage {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.2rem;
+    }
+    .gallery-collage img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .contact-info p, .contact-info a {
+      margin: 0.5rem 0;
+      color: #444;
+      
+    }
+    .contact-info a {
+      color: #c43b3b;
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FineBite</h1>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reserve">Reserve</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Experience Culinary Artistry</h2>
+  </section>
+
+  <section id="about" class="section-light" data-aos="fade-up">
+    <h2>About FineBite</h2>
+    <p>FineBite is your perfect destination for an elevated dining experience. With locally sourced ingredients and globally inspired cuisine, our chefs bring creativity and passion to every dish.</p>
+  </section>
+
+  <section id="menu" class="section-accent" data-aos="fade-up">
+    <h2>Discover Our Menu</h2>
+    <p><a href="#" class="cta-button">View Menu</a></p>
+  </section>
+
+  <section id="gallery" class="section-light" data-aos="fade-up">
+    <h2>Gallery</h2>
+    <div class="gallery-collage">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Dish 1">
+      <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f" alt="Dish 2">
+      <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0" alt="Ambiance">
+      <img src="https://images.unsplash.com/photo-1544510808-91bcbee1df55" alt="Plated meal">
+    </div>
+  </section>
+
+  <section id="reserve" class="section-accent" data-aos="fade-up">
+    <h2>Reserve Your Table</h2>
+    <p><a href="#" class="cta-button">Book Now</a></p>
+  </section>
+
+  <section id="contact" class="section-light" data-aos="fade-up">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:hello@finebite.com">hello@finebite.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+11234567890">+1 (123) 456-7890</a></p>
+      <p><strong>Location:</strong> Your City, Country</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 FineBite. This is a sample prototype for demonstration purposes.
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+        once: true
+      });
+    });
+  </script>
+</body>
+</html>
